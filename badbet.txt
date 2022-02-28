@@ -1,7 +1,7 @@
 When
     [Case
         (Deposit
-            (Role "ourbet")
+            (PK "0ab30c39")
             (Role "player1")
             (Token "" "")
             (Constant 15)
@@ -9,7 +9,7 @@ When
         (When
             [Case
                 (Deposit
-                    (Role "ourbet")
+                    (PK "0ab30c39")
                     (Role "player2")
                     (Token "" "")
                     (Constant 15)
@@ -55,14 +55,14 @@ When
                                             (Constant 1)
                                         )
                                         (Pay
-                                            (Role "ourbet")
+                                            (PK "0ab30c39")
                                             (Party (Role "player1"))
                                             (Token "" "")
                                             (Constant 30)
                                             Close 
                                         )
                                         (Pay
-                                            (Role "ourbet")
+                                            (PK "0ab30c39")
                                             (Party (Role "player2"))
                                             (Token "" "")
                                             (Constant 30)
@@ -70,26 +70,20 @@ When
                                         )
                                     )
                                     (Pay
-                                        (Role "ourbet")
+                                        (PK "0ab30c39")
                                         (Party (Role "player1"))
                                         (Token "" "")
                                         (Constant 15)
-                                        (Pay
-                                            (Role "ourbet")
-                                            (Party (Role "player2"))
-                                            (Token "" "")
-                                            (Constant 15)
-                                            Close 
-                                        )
+                                        Close 
                                     )
                                 )]
-                            100 Close 
+                            120 Close 
                         )]
                     100 Close 
                 )]
             30
             (Pay
-                (Role "ourbet")
+                (PK "0ab30c39")
                 (Party (Role "player1"))
                 (Token "" "")
                 (Constant 15)
